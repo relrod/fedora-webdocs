@@ -54,7 +54,7 @@ existing pages and add the appropriate `export_route` calls at the end.
 
 The templates themselves live in the `sites` directory (under
 `sites/getfedora.org/` still). There are already templates started (but not
-currently exported in `main.py)` for `silverblue`, `coreos`, and `iot`, at time
+currently exported in `main.py`) for `silverblue`, `coreos`, and `iot`, at time
 of writing.
 
 [IMPORTANT]
