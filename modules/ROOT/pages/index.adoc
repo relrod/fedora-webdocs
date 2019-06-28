@@ -1,9 +1,14 @@
-= The Pizza Project
-John Doe; Jane Doe
+= Fedora Websites
+Rick Elrod; Ryan Lerch
 :page-authors: {author}, {author_2}
 
-The Pizza Project is a useful project with a very bad name — it helps you with writing some new documentation for Fedora.
+The Fedora Websites project owns and maintains the Project's online presence.
+Among other things, the team:
 
-In fact, this is just a source template for a new piece of the Fedora Docs.
-
-image::pizza.png[Pizza]
+* Works closely with the Fedora Design team to build out websites in a way that
+  is visually pleasing, easy to use, accessible to everybody, and provides a
+  good experience for newcomers and existing users and contributors alike.
+* Works closely with the Fedora Translations team to ensure that websites are
+  able to be translated into different languages.
+* Maintains the content of the websites, updating it as necessary for releases,
+  new editions, new spins, and so on.
