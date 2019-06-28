@@ -12,3 +12,5 @@ Among other things, the team:
   able to be translated into different languages.
 * Maintains the content of the websites, updating it as necessary for releases,
   new editions, new spins, and so on.
+* Typically has one member (either in Design or Websites) who sits on the Fedora
+  Mindshare committee.
