@@ -11,6 +11,18 @@ repository building on Fedora with Python 3.
 However, it should be able to be built on Fedora 30, using Python 2 packages,
 for now.
 
+=== Fedora 29 Alternative
+
+Note, the dependencies below may not currently resolve due to package renaming
+in Fedora 30. If the dependencies do not resolve in Fedora 30, running Flask
+from a Fedora 29 container is an alternative. An example to run the Fedora 29
+container using `podman` is as follows:
+
+```
+# Expose the default port for Flask, 5000.
+podman run --expose 5000 --net=host --privileged -v /path/to/websites/repo:/path/to/websites/repo -ti registry.fedoraproject.org/fedora:29
+```
+
 == Dependencies
 
 That said, assuming Fedora 30, install the dependencies as follows
