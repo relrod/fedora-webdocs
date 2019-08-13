@@ -18,7 +18,8 @@ footnote:[This list comes directly from the Fedora Infrastructure OpenShift
 build for Websites found
 https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/openshift-apps/websites/templates/buildconfig.yml[here].]:
 
-```
+[source,bash]
+----
 dnf install \
         git \
         python-flask \
@@ -37,12 +38,12 @@ dnf install \
         python-dogpile-cache \
         python-requests \
         python-zanata-client
-```
+----
 
 == Pull Strings
 
 Now we need to pull the current translations. After installing the dependencies
-above, you can cd into `sites/getfedora.org/` and run:
+above, you can `cd` into `sites/getfedora.org/` and run:
 `./scripts/pull-translations.sh`.
 
 Once the dependencies are installed and translations are pulled, you can do one
@@ -58,10 +59,11 @@ live.
 
 To use the development server:
 
-```
+[source,bash]
+----
 export FLASK_APP=main.py
 flask run --reload
-```
+----
 
 Now you many visit http://localhost:5000/ to get to the site.
 
