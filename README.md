@@ -1,6 +1,6 @@
-# Fedora Docs Template
+# Fedora Websites docs
 
-This repository contains a minimal source structure for a new Fedora Docs source.
+This repository documentation for maintaining and adding new Fedora websites.
 
 ## Structure
 
@@ -118,4 +118,3 @@ To build the whole site, I would run the following in the `docs-fp-o` directory.
 ```
 $ ./build.sh && ./preview.sh
 ```
-

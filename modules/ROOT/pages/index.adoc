@@ -5,12 +5,15 @@ Rick Elrod; Ryan Lerch
 The Fedora Websites project owns and maintains the Project's online presence.
 Among other things, the team:
 
-* Works closely with the Fedora Design team to build out websites in a way that
-  is visually pleasing, easy to use, accessible to everybody, and provides a
-  good experience for newcomers and existing users and contributors alike.
-* Works closely with the Fedora Translations team to ensure that websites are
-  able to be translated into different languages.
+* Works closely with the
+  link:++https://fedoraproject.org/wiki/Design++[Fedora Design team] to build
+  our websites in a way that is visually pleasing, easy to use, accessible to
+  everybody, and provides a good experience for newcomers and existing users
+  and contributors alike.
+* Works closely with the
+  link:++https://fedoraproject.org/wiki/L10N++[Fedora Translations team] to
+  ensure that websites are able to be translated into different languages.
 * Maintains the content of the websites, updating it as necessary for releases,
   new editions, new spins, and so on.
-* Typically has one member (either in Design or Websites) who sits on the Fedora
-  Mindshare committee.
+* Typically has one member (either in Design or Websites) who sits on the
+  xref:mindshare::index.adoc[Fedora Mindshare committee].

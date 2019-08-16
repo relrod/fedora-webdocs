@@ -5,16 +5,16 @@ Rick Elrod
 Content can be broken into several different components, although some of the
 process is the same for all cases.
 
-All new sites are being built with the Python http://flask.pocoo.org/[Flask]
-framework and the https://pythonhosted.org/Frozen-Flask/[Frozen-Flask] library
+All new sites are being built with the Python link:http://flask.pocoo.org/[Flask]
+framework and the link:https://pythonhosted.org/Frozen-Flask/[Frozen-Flask] library
 for generating static pages.
 
 == New Editions
 
 New editions of Fedora should be added to the getfedora.org website. We are
 trying to get away from having a bunch of `*.fedoraproject.org` sites for each
-of the various editions (currently we have https://coreos.fedoraproject.org,
-https://iot.fedoraproject.org, etc.).
+of the various editions (currently we have link:https://coreos.fedoraproject.org[],
+link:https://iot.fedoraproject.org[], etc.).
 
 == New Websites
 

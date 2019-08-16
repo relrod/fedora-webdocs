@@ -9,9 +9,9 @@ Fedora editions are "versions" of Fedora that users can install. These include
 ultimate goal in Websites is to also make Spins and Labs editions be considered
 "editions" in some form as far as websites are concerned. That is to say, we'd
 like to ultimately have Spins and Labs have a section on the main getfedora.org
-site, rendering https://spins.fedorparoject.org/ and
-https://labs.fedoraproject.org/ useless and able to be gotten rid of. Doing this
-effectively will take some time.
+site, rendering link:https://spins.fedorparoject.org/[] and
+link:https://labs.fedoraproject.org/[] useless and able to be gotten rid of.
+Doing this effectively will take some time.
 
 Also note that most of the content in this document applies to adding pages in
 general, with the notable exception of the `release.yaml` edits. Adding a page
@@ -28,8 +28,8 @@ new site from scratch.
 ====
 
 Now then, all work in this document takes place in the repository in which
-https://pagure.io/fedora-web/websites/[getfedora.org] lives, and particularly in
-the `sites/getfedora.org/` directory.
+link:https://pagure.io/fedora-web/websites/[getfedora.org] lives, and particularly
+in the `sites/getfedora.org/` directory.
 
 == Edition-specific Release Variables
 
