@@ -1,4 +1,5 @@
-* xref:setup.adoc[Getting Set Up]
+* xref:setup-docker.adoc[Getting Set Up (Docker)]
+* xref:setup.adoc[Getting Set Up (old method)]
 * xref:newcontent.adoc[Creating New Content]
 ** xref:newcontent-edition.adoc[New Edition]
 ** xref:newcontent-site.adoc[New Site]

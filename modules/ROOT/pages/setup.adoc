@@ -2,6 +2,13 @@
 Rick Elrod
 :page-authors: {author}
 
+[NOTE]
+====
+We now have documentation on using the `Dockerfile` which ships in the Fedora
+websites repository, and suggest trying that method before using the method
+outlined on this page. See link:../setup-docker[this tutorial].
+====
+
 == Preliminary Notes
 
 There are some open tickets (https://pagure.io/fedora-web/websites/issue/31[31],
