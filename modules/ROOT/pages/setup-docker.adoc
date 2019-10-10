@@ -46,16 +46,8 @@ the container:
 
 [source,bash]
 ----
-sudo docker run --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/pull-translations.sh
+sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites ./scripts/pull-translations.sh
 ----
-
-[NOTE]
-====
-This might take some time, and due to STDOUT buffering from Docker, it
-might look odd for a while (writing partial lines to your terminal
-until it is done). Just be patient and it should hopefully finish
-within a minute or so.
-====
 
 
 Notice here that we are mounting a volume (`-v`) in Docker which
@@ -69,7 +61,7 @@ Now we are ready to run the development server:
 
 [source,bash]
 ----
-sudo docker run --rm -v "$(pwd):/opt/:z" -p 5000:5000 fedora-websites flask run --reload --host 0.0.0.0
+sudo docker run -it --rm -v "$(pwd):/opt/:z" -p 5000:5000 fedora-websites flask run --reload --host 0.0.0.0
 ----
 
 Note that we need `-p 5000:5000` so that we can access the development
