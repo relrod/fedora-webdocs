@@ -7,7 +7,9 @@ Rick Elrod
 [NOTE]
 ====
 This assume you have a working setup already. See the other documents (e.g. the
-one using Docker to get a development environment working) to get set up.
+one using Docker to get a development environment working) to get set up. Also,
+if using a container-based environment, *ensure that the image you're using
+reflects the latest `Dockerfile` in the root of the repository.*
 ====
 
 This document guides you through updating the websites for a release (beta or
@@ -18,7 +20,7 @@ Most of the work comes down to editing one file,
 note.
 
 The `release.yaml` file is broken into several main sections, and the relevant
-ones are `ga`, `beta`, and `gpg_keys`.
+ones are `ga`, `beta`, `fmw`, and `gpg_keys`.
 
 [NOTE]
 ====
@@ -44,7 +46,7 @@ necessary.
 
 == GA Releases
 
-If you are updating for a `ga` release, then in the `beta` section, set `show`
+If you are updating for a *ga* release, then in the `beta` section, set `show`
 to `false`, so that the beta downloads don't show, and the announcement at the
 top of the landing site reflects the new GA. Check with someone (usually Paul
 Frields (`stickster` on IRC) to find the URL of the Fedora Magazine announcement
@@ -53,6 +55,50 @@ for the release, and set `announcement_url` to that, in the `ga` section.
 Next, bump the `release_number` and `rc_version` of each edition under
 `editions`, using the `rc_version` that was declared gold/ready for
 release. Find this information out from releng, if necessary.
+
+== `releases.json` file
+
+The next step is to produce the `releases.json` static file used by Fedora Media
+Writer to produce its list of possible downloads. In the `fmw` section of
+`release.yaml`, update the `releases_json` list to include the current non-EOL
+versions of Fedora, including any current betas. If a version is in beta, set
+the its `milestone` to `beta`. Otherwise set it to `final` or leave out the
+field altogether.
+
+For example:
+
+[source,yaml]
+----
+fmw:
+  ...
+  releases_json:
+    - version: 31
+      milestone: beta
+    - version: 30
+    - version: 29
+----
+
+Once this is done, you'll need to actually generate the `releases.json` file.
+
+If using a containerized environment, you can do this from the root of the
+repository (replacing `sudo docker` with `podman` if you use Podman):
+
+[source,bash]
+----
+sudo docker run -it --rm -v "$(pwd):/opt/:z" fedora-websites python ./scripts/releases-json.py > sites/getfedora.org/static/releases.json
+----
+
+Otherwise, if you're not using a containerized environment, you can run the
+script yourself after installing the `python-fedfind` package. From the root of
+the repository:
+
+[source,bash]
+----
+python3 sites/getfedora.org/scripts/releases-json.py > sites/getfedora.org/static/releases.json
+----
+
+Check that releases.json looks sane (it should look like a blob of JSON), then
+move on.
 
 == Checksum Files
 
